@@ -1,0 +1,273 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('../images/background.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero-name {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
+  }
+}
+
+/* Langauges Section */
+.skills-section {
+  background-color: #222;
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.skills-content {
+  max-width: 900px;
+  width: 100%;
+}
+
+.skills-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.subsection {
+  margin-bottom: 3rem;
+}
+
+.subsection h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.items-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem 2rem;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.items-grid li {
+  background: #444;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+
+  /* Flex layout to center icon and text vertically */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+
+  /* Hover effect */
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.items-grid li:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+/* Circular icon styling */
+.items-grid li img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  background-color: #222;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .items-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .skills-section {
+    padding: 3rem 1rem;
+  }
+  
+  .skills-section h2 {
+    font-size: 2rem;
+  }
+  
+  .subsection h3 {
+    font-size: 1.5rem;
+  }
+  
+  .items-grid li {
+    font-size: 1rem;
+  }
+}
+
+/* Skills */
+.skills-list {
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-list li {
+  background: #444;
+  padding: 1.5rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  flex: 1 1 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.skills-list li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+.section-divider {
+  border: none;
+  height: 2px;
+  background-color: #555;
+  margin: 3rem auto;
+  width: 80%;
+  max-width: 600px;
+  opacity: 0.6;
+}
+/* ==== Projects Section ==== */
+
+.projects-section {
+  background-color: #1b1b1b;
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.projects-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.project {
+  background-color: #333;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffd700;
+}
+
+.project p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.project:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .projects-section h2 {
+    font-size: 2rem;
+  }
+
+  .project h3 {
+    font-size: 1.3rem;
+  }
+
+  .project p {
+    font-size: 1rem;
+  }
+}
+
+/* Contact Me Section */
+.footer {
+  padding: 2.5rem 0;
+  border-top: 1px solid #444;
+  background-color: #121212;
+  color: #bbb;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.footer-nav li a {
+  color: #bbb;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  transition: color 0.3s ease;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:focus {
+  color: #ffd700;
+  outline: none;
+}
